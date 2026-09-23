@@ -29,8 +29,13 @@ This repository contains the build scripts, Device Tree Blob (DTB), Device Tree 
    cd halium_boot_sweet
 
    chmod +x build.sh
-./build.sh
-to flash 
-fastboot flash boot boot.img
-to try
-fastboot boot boot.img
+   ./build.sh
+   #to flash 
+   fastboot flash boot boot.img
+   #to try
+   fastboot boot boot.img
+⚠️ Notes
+
+    Designed specifically for Halium 11.0 target systems (Ubuntu Touch / UBports).
+
+    Make sure your device bootloader is unlocked before attempting to flash custom boot images.
